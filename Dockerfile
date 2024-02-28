@@ -20,3 +20,6 @@ RUN pip install --upgrade pip
 RUN pip3 install torch torchvision torchaudio
 RUN pip install ultralytics
 RUN pip install gradio
+
+EXPOSE 7860
+CMD ["python", "app.py"]
