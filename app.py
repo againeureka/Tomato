@@ -56,7 +56,7 @@ if __name__ == "__main__":
 with gr.Blocks() as demo:
     with gr.Row():
         with gr.Column():
-            markdown = gr.Markdown(f"# {} Detector")
+            markdown = gr.Markdown(f"# {object_name} Detector")
             input1 = gr.Textbox(label = "Video URL") # Put Video URL
             btn1 = gr.Button("Run", size="sm")
         with gr.Column():
