@@ -6,7 +6,7 @@ import time
 import ffmpeg
 from ultralytics import YOLO
 
-object_name = "Tomato"
+object_name = "Tomato (JPark)"
 
 # Run YOLO 
 def run_yolo(input_video_url):
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 with gr.Blocks() as demo:
     with gr.Row():
         with gr.Column():
-            markdown = gr.Markdown(f"# {object_name} Detector")
+            markdown = gr.Markdown(f"# {} Detector")
             input1 = gr.Textbox(label = "Video URL") # Put Video URL
             btn1 = gr.Button("Run", size="sm")
         with gr.Column():
